@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,57 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sales Tax Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-TX-8k4">
-                                <rect key="frame" x="12" y="56" width="390" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tax Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-TX-8k4">
+                                <rect key="frame" x="12" y="60" width="390" height="41"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Before Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-YN-9YI">
-                                <rect key="frame" x="12" y="133" width="123.5" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Before Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-YN-9YI">
+                                <rect key="frame" x="12" y="141" width="123.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zoy-Ds-N9l">
-                                <rect key="frame" x="143.5" y="126.5" width="258.5" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="$0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zoy-Ds-N9l">
+                                <rect key="frame" x="147.5" y="134.5" width="254.5" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="beforeTaxPriceChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="f7Y-fI-tRE"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sales Tax Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-Fj-UYZ">
-                                <rect key="frame" x="12" y="174" width="111" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tax Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y5X-Fj-UYZ">
+                                <rect key="frame" x="12" y="186" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6.9%" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-8L-Pj2">
-                                <rect key="frame" x="131" y="167.5" width="271" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="6.9%" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUp-8L-Pj2">
+                                <rect key="frame" x="148" y="179.5" width="254" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="salesTaxRateChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="n1U-Iv-EYJ"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="After Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-ks-IHq">
-                                <rect key="frame" x="12" y="224" width="111" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After Tax Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cnl-ks-IHq">
+                                <rect key="frame" x="12" y="231" width="111" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGp-Tw-YQh">
-                                <rect key="frame" x="135" y="217" width="259" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GGp-Tw-YQh">
+                                <rect key="frame" x="148" y="224.5" width="254" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPw-OD-uUw">
-                                <rect key="frame" x="165" y="315" width="84.5" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPw-OD-uUw">
+                                <rect key="frame" x="159.5" y="322.5" width="95" height="34.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                             </button>
@@ -74,13 +71,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Cnl-ks-IHq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="TSs-1h-Ir6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GGp-Tw-YQh" secondAttribute="trailing" constant="20" id="bFv-Gj-Zc9"/>
-                            <constraint firstItem="GGp-Tw-YQh" firstAttribute="centerY" secondItem="Cnl-ks-IHq" secondAttribute="centerY" id="ez9-K0-mcN"/>
-                            <constraint firstItem="GGp-Tw-YQh" firstAttribute="leading" secondItem="Cnl-ks-IHq" secondAttribute="trailing" constant="12" id="fbq-pe-0G9"/>
-                            <constraint firstItem="HPw-OD-uUw" firstAttribute="top" secondItem="GGp-Tw-YQh" secondAttribute="bottom" constant="40" id="ryc-gI-8rj"/>
-                            <constraint firstItem="HPw-OD-uUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="teY-Xw-VtT"/>
-                            <constraint firstItem="Cnl-ks-IHq" firstAttribute="top" secondItem="TUp-8L-Pj2" secondAttribute="bottom" constant="20" id="uZX-GQ-WAC"/>
+                            <constraint firstItem="zoy-Ds-N9l" firstAttribute="centerY" secondItem="BiK-YN-9YI" secondAttribute="centerY" id="1JM-GO-zSp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GGp-Tw-YQh" secondAttribute="trailing" constant="12" id="3ff-yE-pP6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TUp-8L-Pj2" secondAttribute="trailing" constant="12" id="AUA-e3-lng"/>
+                            <constraint firstItem="HPw-OD-uUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BaG-w4-oLp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sBt-TX-8k4" secondAttribute="trailing" constant="12" id="EAw-um-D5L"/>
+                            <constraint firstItem="GGp-Tw-YQh" firstAttribute="leading" secondItem="Cnl-ks-IHq" secondAttribute="trailing" constant="25" id="EWN-U0-dOE"/>
+                            <constraint firstItem="Y5X-Fj-UYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="LhP-d1-9ZP"/>
+                            <constraint firstItem="BiK-YN-9YI" firstAttribute="top" secondItem="sBt-TX-8k4" secondAttribute="bottom" constant="40" id="MIT-jv-ieA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zoy-Ds-N9l" secondAttribute="trailing" constant="12" id="ShN-zF-ikB"/>
+                            <constraint firstItem="TUp-8L-Pj2" firstAttribute="leading" secondItem="Y5X-Fj-UYZ" secondAttribute="trailing" constant="25" id="V1o-CO-1Mj"/>
+                            <constraint firstItem="TUp-8L-Pj2" firstAttribute="centerY" secondItem="Y5X-Fj-UYZ" secondAttribute="centerY" id="X5G-E5-kLg"/>
+                            <constraint firstItem="Cnl-ks-IHq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="Zs2-0q-LbR"/>
+                            <constraint firstItem="Cnl-ks-IHq" firstAttribute="top" secondItem="Y5X-Fj-UYZ" secondAttribute="bottom" constant="24" id="elx-66-5su"/>
+                            <constraint firstItem="Y5X-Fj-UYZ" firstAttribute="top" secondItem="BiK-YN-9YI" secondAttribute="bottom" constant="24" id="f2F-ce-zUr"/>
+                            <constraint firstItem="sBt-TX-8k4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="gvC-YS-WQY"/>
+                            <constraint firstItem="BiK-YN-9YI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="or3-Xx-nBK"/>
+                            <constraint firstItem="sBt-TX-8k4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="qXo-zx-jQO"/>
+                            <constraint firstItem="HPw-OD-uUw" firstAttribute="top" secondItem="GGp-Tw-YQh" secondAttribute="bottom" constant="64" id="rbq-Wp-ttT"/>
+                            <constraint firstItem="Y5X-Fj-UYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="uVg-Ma-OZL"/>
+                            <constraint firstItem="zoy-Ds-N9l" firstAttribute="leading" secondItem="BiK-YN-9YI" secondAttribute="trailing" constant="12" id="wbA-YA-cMW"/>
+                            <constraint firstItem="Y5X-Fj-UYZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="xuv-Xh-Prs"/>
+                            <constraint firstItem="GGp-Tw-YQh" firstAttribute="centerY" secondItem="Cnl-ks-IHq" secondAttribute="centerY" id="xwc-ry-9Ag"/>
                         </constraints>
                     </view>
                 </viewController>
